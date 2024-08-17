@@ -15,10 +15,8 @@
 
 **Solution**:
 
-**Code**(Optimal Solution):
+**Code**(Better Solution):
 ```cpp
-
-
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
@@ -37,3 +35,20 @@ public:
         }
     }
 };
+```
+**Code**(Optimal Solution):
+```cpp
+class Solution {
+public:
+    void rotate(vector<int>& arr, int k) {
+        int len = arr.size();
+        if(len!=1){
+            k=k%len;
+            reverse(arr.begin(),arr.end()-k);
+            reverse(arr.end()-k,arr.end());
+            reverse(arr.begin(),arr.end());
+        }
+    }
+};
+
+

@@ -1,14 +1,6 @@
 # Selection Sort
 ---
 
-## Solution
-
-### Explanation
-
-**Hindi**:  
-do loop lagao i and j , j loop ke andar value compare karke minimum find karlo , fir minimum ko swap kardo first element se.
-
----
 
 ### Complexities
 
@@ -19,6 +11,8 @@ do loop lagao i and j , j loop ke andar value compare karke minimum find karlo ,
   The space complexity is `O(1)` since no extra vector or array is used.
 
 ---
+
+## Solution
 
 ## Code
 

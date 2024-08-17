@@ -1,4 +1,4 @@
-# Left rotate an array by D places
+# Left rotate an array by K places
 
 **Problem Statement**:
 [Link to LeetCode](https://leetcode.com/problems/rotate-array/)

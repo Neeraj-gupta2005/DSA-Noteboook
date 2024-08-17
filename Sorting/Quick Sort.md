@@ -19,12 +19,26 @@
 ## Code
 
 ```cpp
-void bubbleSort(vector<int>& arr, int n) {
-    for(int i = 0; i < n - 1; i++) {
-        for(int j = 0; j < n - i - 1; j++) {
-            if(arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j + 1]);
-            }
+int part(vector<int> &arr ,int low,int high){
+    int pivot  = arr[low];
+    int i = low;
+    int j = high;
+    while(i<j){
+        while(i<=high && arr[i]<=pivot){
+            i++;
         }
+        while(j>=low && arr[j]>pivot){
+            j--;
+        }
+        if(i<j) swap(arr[i],arr[j]);
+    }
+    swap(arr[low],arr[j]);
+    return j;
+}
+void quickSort(vector <int> &arr ,int low ,int high){
+    if(low < high){
+        int partition_index = part(arr,low,high);
+        quickSort(arr,low,partition_index-1);
+        quickSort(arr,partition_index+1,high);
     }
 }

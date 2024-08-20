@@ -52,7 +52,7 @@ void setMinusRow(vector<vector<int>>&matrix ,int i ,int n){
         }
     }
 ```
-**Code** (Better Solution) `Time Compexity O(n^2)` `Space Compexity O(n^2)` :
+**Code** (Better Solution) `Time Compexity O(n^2)` `Space Compexity O(2n)` :
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {
         int m = matrix.size();

@@ -9,8 +9,8 @@
 - **Time Complexity**: `O(n)`  
   The time complexity is `O(n)` because of single loop.
 
-- **Space Complexity**: `O(n)`  
-  The space complexity is `O(n)` since an extra vector or array is used to store the answer.
+- **Space Complexity**: `O(1)`  
+  The space complexity is `O(1)` since no extra vector or array is used .
 
 ---
 

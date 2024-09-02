@@ -12,7 +12,7 @@ Welcome to the DSA Notebook repository! This repository is dedicated to document
 
 ## Example File Structure
 
-Each daily file will follow this structure:
+Each file will follow this structure:
 
 ### Problem Statement
 

@@ -18,7 +18,7 @@
 
 **Code** (Optimal Solution):
 
-```
+```cpp
 
 class Solution {
 public:

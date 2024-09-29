@@ -1,30 +1,40 @@
 
-# 
+# Minimum Element After Replacement With Digit Sum
 
-**Problem Statement**:
-[Link to LeetCode]()
+You are given an integer array `nums`.
+You replace each element in `nums` with the sum of its digits.
+Return the minimum element in `nums` after all replacements.
 
-### Complexities
 
-- **Time Complexity**: `O(n)`  
-  The time complexity is `O(n)` because of single loop.
+**Example 1**:
 
-- **Space Complexity**: `O(1)`  
-  The space complexity is `O(1)` since no extra vector or array is used.
+Input: nums = `[10,12,13,14]`
 
----
+Output: `1`
+
+Explanation:
+
+`nums` becomes `[1, 3, 4, 5]` after all replacements, with minimum element 1.
+
+
 
 **Solution**:
 
-**Code** (BruteForce Solution) `O()` :
+**Code** (optimal Solution):
 ```cpp
-
-```
-**Code** (Better Solution) `O()` :
-```cpp
-
-```
-**Code**(Optimal Solution) `O()` :
-```cpp
-
+    int calcSum(int num){
+        int sum = 0;
+        while(num != 0){
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
+    int minElement(vector<int>& nums) {
+        vector <int> ans;
+        for(auto i : nums){
+            ans.push_back(calcSum(i));
+        }
+        return *min_element(ans.begin(),ans.end());
+    }
 ```

@@ -16,7 +16,7 @@
 **Solution**:
 
 **Code**(BruteForce Solution):
-```cp
+```cpp
 vector<int> moveZeros(int n, vector<int> a) {
     vector<int> temp;
     //copy non-zero elements
